@@ -9,6 +9,9 @@ module FileTurn
     end
 
     # instance
+    def errors
+      false
+    end
 
   end
 end

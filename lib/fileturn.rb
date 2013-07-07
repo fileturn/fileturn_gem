@@ -12,5 +12,6 @@ end
 require "fileturn/exceptions"
 require "fileturn/http_client"
 require "fileturn/resources/resource"
+require "fileturn/resources/upload"
 require "fileturn/resources/notification"
 require "fileturn/resources/file"

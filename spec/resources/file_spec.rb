@@ -14,6 +14,10 @@ describe FileTurn::File do
     @qfile ||= FileTurn::File.find(210)
   end
 
+  def user_without_credits
+    FileTurn.configure(:api_key => 'vGAMKzyN1pFGCNcCFsPpjjVVZtvim1zop3te2pQU')
+  end
+
   describe '.find' do
     it 'raises exception if unauthorized' do
       FileTurn.configure(:api_key => 'blah')
@@ -46,11 +50,10 @@ describe FileTurn::File do
       obj.total_pages == 3 
     end
 
-    it 'reloads a file to fetch notifications' do
+    it 'fetches all the notifications' do
       obj = FileTurn::File.all
       file = obj.files.first
-      file.notifications.count.should == 0
-      file.reload.notifications.count.should == 1
+      file.notifications.count.should == 1
     end
   end
 
@@ -67,7 +70,9 @@ describe FileTurn::File do
       file.url.should == 'http://test.com'
       file.notifications.count.should == 0
     end
+  end
 
+  describe 'upload' do
     it 'converts an uploaded file' do
       file = FileTurn::File.convert(:file => File.open('README.md'), :convert_to => :pdf)
       file.queued?.should == true
@@ -76,6 +81,15 @@ describe FileTurn::File do
     it 'converts and uploads a doc file' do
       file = FileTurn::File.convert(:file => File.open('./spec/data/testfile.docx'), :convert_to => :pdf)
       file.queued?.should == true
+    end
+
+    it 'doesnt upload a file if there are not enough credits' do
+      user_without_credits
+      file = FileTurn::File.convert(:file => File.open('./spec/data/testfile.docx'), :convert_to => :pdf)
+      file.queued?.should == nil
+      file.errors.should == {'credits'=>['need more credits to convert files']}
+    
+      FileTurn::Upload.all.uploads.count.should == 0
     end
   end
 

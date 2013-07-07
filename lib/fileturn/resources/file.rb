@@ -35,38 +35,28 @@ module FileTurn
     private
 
       def upload_file(file, params)
-        signed_params = signed_upload_url(file)
-        return signed_params unless (signed_params.keys.include?("policy") rescue false)
-        
-        faraday = Faraday.new(:url => signed_params['url']) do |conn| 
+        signed_params = FileTurn::Upload.send(:signed_upload_url, file)
+        return signed_params if signed_params.errors
+
+        faraday = Faraday.new(:url => signed_params.url) do |conn| 
           conn.request :multipart
           conn.adapter :net_http
         end
 
         response = faraday.post '/', {
-          :policy => signed_params['policy'],
-          :signature => signed_params['signature'],
-          'AWSAccessKeyId' => signed_params['aws_access_key_id'],
-          :key => signed_params['key'],
+          :policy => signed_params.policy,
+          :signature => signed_params.signature,
+          'AWSAccessKeyId' => signed_params.aws_access_key_id,
+          :key => signed_params.key,
           :file => Faraday::UploadIO.new(file.path, '')
         }
 
         if response.status == 204
           params[:file] = params['file'] = nil
-          params['url'] = "#{signed_params['url']}/#{signed_params['key']}"
-          params['file_type'] = file.class.extname(file.path).gsub('.', '')
-          params['upload_id'] = signed_params['id']
+          params['url'] = "#{signed_params.url}/#{signed_params.key}"
+          params['file_type'] = signed_params.file_type
+          params['upload_id'] = signed_params.id
           convert(params)
-        end
-      end
-
-      def signed_upload_url(file)
-        file_type = file.class.extname(file.path).gsub('.', '')
-        file_type = 'unknown' if file_type == ''
-        file_size = file.class.size(file.path)
-
-        conn.post('files/upload.json', { content_type: file_type, content_length: file_size }, 201) do |params|
-          params
         end
       end
 
