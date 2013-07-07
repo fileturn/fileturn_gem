@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/files.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Content-Length:
+      - '0'
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 422
+      message: ''
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - c6a0b861ed2fb1d52a61d848fc89d266
+      X-Runtime:
+      - '0.014345'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
+      Date:
+      - Sun, 07 Jul 2013 19:27:01 GMT
+      Content-Length:
+      - '69'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"errors":{"url":["can''t be blank"],"convert_to":["can''t be blank"]}}'
+    http_version: 
+  recorded_at: Sun, 07 Jul 2013 19:27:01 GMT
+recorded_with: VCR 2.4.0

@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/uploads/19.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"dc6610c293f9549d4c844add90a55b08"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 15649ac96012a2874fcb1a489f075889
+      X-Runtime:
+      - '0.009576'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
+      Date:
+      - Sun, 07 Jul 2013 19:29:24 GMT
+      Content-Length:
+      - '346'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":19,"policy":"eyJleHBpcmF0aW9uIjoiMjAxMy0wNy0wN1QwNzo0MjoyMVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybiJ9LHsia2V5IjoidXBsb2Fkcy84XzE5In0sWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsNTAwLDUwMF1dfQ==","signature":"fT8UPL6JZyFFDNnvp34hu19xTOA=","aws_access_key_id":"AKIAIKXW3ZZ5WNURNYMA","key":"uploads/8_19","url":"https://fileturn.s3.amazonaws.com"}'
+    http_version: 
+  recorded_at: Sun, 07 Jul 2013 19:29:24 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/uploads/19.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - ! '"dc6610c293f9549d4c844add90a55b08"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b87acbea20709f9b62ff61aaaef1b791
+      X-Runtime:
+      - '0.009502'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
+      Date:
+      - Sun, 07 Jul 2013 19:29:24 GMT
+      Content-Length:
+      - '346'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":19,"policy":"eyJleHBpcmF0aW9uIjoiMjAxMy0wNy0wN1QwNzo0MjoyMVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybiJ9LHsia2V5IjoidXBsb2Fkcy84XzE5In0sWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsNTAwLDUwMF1dfQ==","signature":"fT8UPL6JZyFFDNnvp34hu19xTOA=","aws_access_key_id":"AKIAIKXW3ZZ5WNURNYMA","key":"uploads/8_19","url":"https://fileturn.s3.amazonaws.com"}'
+    http_version: 
+  recorded_at: Sun, 07 Jul 2013 19:29:24 GMT
+recorded_with: VCR 2.4.0
