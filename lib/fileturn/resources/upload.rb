@@ -37,6 +37,13 @@ module FileTurn
         end
       end
 
+      def evaluate_file_size(file)
+        max_size = Account.load_only_if_not_loaded.max_file_size_in_bytes
+        if file.size > max_size
+          OpenStruct.new(:errors => {"file_size"=>["is too big"]})
+        end
+      end
+
     end
 
     #vars

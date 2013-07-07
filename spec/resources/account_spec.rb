@@ -7,6 +7,7 @@ describe FileTurn::Account do
       FileTurn::Account.credits.should_not be_nil
       FileTurn::Account.time_zone.should_not be_nil
       FileTurn::Account.notification_url.should_not be_nil
+      FileTurn::Account.max_file_size_in_bytes.should == 1048576
       FileTurn::Account.created_at.class.should == DateTime
     end
   end

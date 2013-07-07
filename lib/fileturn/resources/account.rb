@@ -12,6 +12,15 @@ module FileTurn
         end
       end
 
+      def load_only_if_not_loaded
+        load if @account.nil? || @account.id.nil?
+        self
+      end
+
+      def id
+        @account.id
+      end
+
       def credits
         @account.credits
       end
@@ -26,6 +35,10 @@ module FileTurn
 
       def time_zone
         @account.time_zone
+      end
+
+      def max_file_size_in_bytes
+        @account.max_file_size_in_bytes
       end
     end
 

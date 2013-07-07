@@ -27,13 +27,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 45d4a834e724325e69ccf1cec9ce7fed
+      - f000769bcaea9da8cde2ed5722e64c95
       X-Runtime:
-      - '0.010981'
+      - '0.010352'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 19:28:47 GMT
+      - Sun, 07 Jul 2013 22:46:58 GMT
       Content-Length:
       - '461'
       Connection:
@@ -42,7 +42,7 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"id":212,"url":"http://www.k12.wa.us/rti/implementation/pubdocs/SchoolBlueprint.doc","convert_to":"pdf","created_at":"2013-07-07T03:38:20Z","status":"processed","download_url":"https://fileturn.s3.amazonaws.com/8_212.pdf?AWSAccessKeyId=AKIAIKXW3ZZ5WNURNYMA&Expires=1373259946&Signature=K60jm8kkSkXYjoEi8eVVr%2Bh1bBY%3D","notifications":[{"id":184,"details":null,"parsed_time":"2013-07-07T03:40:06Z","status":"success","time_taken":"105.926075","file_id":212}]}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:28:47 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:58 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/files/154.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
@@ -70,13 +70,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 63c5c1bf84a0d650daad9170e86995bd
+      - f9b76e655104439fa8abd0a18fef85d9
       X-Runtime:
-      - '0.010720'
+      - '0.045212'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 19:28:47 GMT
+      - Sun, 07 Jul 2013 22:46:58 GMT
       Content-Length:
       - '290'
       Connection:
@@ -86,7 +86,7 @@ http_interactions:
       string: ! '{"id":154,"url":"http://www.iiswc.org/iiswc2013/sample.docaa","convert_to":"pdf","created_at":"2013-07-06T01:18:31Z","status":"failed","download_url":"","notifications":[{"id":132,"details":"Invalid
         response code: 404","parsed_time":null,"status":"failed","time_taken":null,"file_id":154}]}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:28:47 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:58 GMT
 - request:
     method: get
     uri: http://localhost:3000/api/files/210.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
@@ -114,13 +114,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ab1babcbbb7daf43ce6d357536d1efaa
+      - 31ba6d690031e206c7e77c284a10a514
       X-Runtime:
-      - '0.011141'
+      - '0.010914'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 19:28:47 GMT
+      - Sun, 07 Jul 2013 22:46:58 GMT
       Content-Length:
       - '196'
       Connection:
@@ -129,5 +129,5 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"id":210,"url":"http://www.k12.wa.us/rti/implementation/pubdocs/SchoolBlueprint.doc","convert_to":"pdf","created_at":"2013-07-07T02:30:27Z","status":"queued","download_url":"","notifications":[]}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:28:47 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:58 GMT
 recorded_with: VCR 2.4.0

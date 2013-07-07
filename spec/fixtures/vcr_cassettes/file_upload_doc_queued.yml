@@ -23,26 +23,26 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       Etag:
-      - ! '"846d3ffa44c02fd5feec06a9a44c7fff"'
+      - ! '"4fc7e1a78e6dbee5558db1db418d91ec"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bb2a345f202c9edf70d961943b32d1c0
+      - a4d131f88614b502a5e7c9bbeaaff6d6
       X-Runtime:
-      - '0.014333'
+      - '0.014494'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 19:27:42 GMT
+      - Sun, 07 Jul 2013 22:46:59 GMT
       Content-Length:
       - '352'
       Connection:
       - Keep-Alive
     body:
       encoding: US-ASCII
-      string: ! '{"id":261,"policy":"eyJleHBpcmF0aW9uIjoiMjAxMy0wNy0wN1QxOTo1Nzo0MloiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybiJ9LHsia2V5IjoidXBsb2Fkcy84XzI2MSJ9LFsiY29udGVudC1sZW5ndGgtcmFuZ2UiLDI2NzU3LDI2NzU3XV19","signature":"Chv4G2QN+BaPhgfCaJBSjYwv4IA=","aws_access_key_id":"AKIAIKXW3ZZ5WNURNYMA","key":"uploads/8_261","url":"https://fileturn.s3.amazonaws.com"}'
+      string: ! '{"id":296,"policy":"eyJleHBpcmF0aW9uIjoiMjAxMy0wNy0wN1QyMzoxNjo1OVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybiJ9LHsia2V5IjoidXBsb2Fkcy84XzI5NiJ9LFsiY29udGVudC1sZW5ndGgtcmFuZ2UiLDI2NzU3LDI2NzU3XV19","signature":"roDymGswQWLYGElIdVkP53WovAY=","aws_access_key_id":"AKIAIKXW3ZZ5WNURNYMA","key":"uploads/8_296","url":"https://fileturn.s3.amazonaws.com"}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:27:42 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:59 GMT
 - request:
     method: post
     uri: https://fileturn.s3.amazonaws.com/
@@ -51,17 +51,17 @@ http_interactions:
       string: !binary |-
         LS0tLS0tLS0tLS0tLVJ1YnlNdWx0aXBhcnRQb3N0DQpDb250ZW50LURpc3Bv
         c2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InBvbGljeSINCg0KZXlKbGVIQnBj
-        bUYwYVc5dUlqb2lNakF4TXkwd055MHdOMVF4T1RvMU56bzBNbG9pTENKamIy
+        bUYwYVc5dUlqb2lNakF4TXkwd055MHdOMVF5TXpveE5qbzFPVm9pTENKamIy
         NWthWFJwYjI1eklqcGJleUppZFdOclpYUWlPaUptYVd4bGRIVnliaUo5TEhz
-        aWEyVjVJam9pZFhCc2IyRmtjeTg0WHpJMk1TSjlMRnNpWTI5dWRHVnVkQzFz
+        aWEyVjVJam9pZFhCc2IyRmtjeTg0WHpJNU5pSjlMRnNpWTI5dWRHVnVkQzFz
         Wlc1bmRHZ3RjbUZ1WjJVaUxESTJOelUzTERJMk56VTNYVjE5DQotLS0tLS0t
         LS0tLS0tUnVieU11bHRpcGFydFBvc3QNCkNvbnRlbnQtRGlzcG9zaXRpb246
-        IGZvcm0tZGF0YTsgbmFtZT0ic2lnbmF0dXJlIg0KDQpDaHY0RzJRTitCYVBo
-        Z2ZDYUpCU2pZd3Y0SUE9DQotLS0tLS0tLS0tLS0tUnVieU11bHRpcGFydFBv
+        IGZvcm0tZGF0YTsgbmFtZT0ic2lnbmF0dXJlIg0KDQpyb0R5bUdzd1FXTFlH
+        RWxJZFZrUDUzV292QVk9DQotLS0tLS0tLS0tLS0tUnVieU11bHRpcGFydFBv
         c3QNCkNvbnRlbnQtRGlzcG9zaXRpb246IGZvcm0tZGF0YTsgbmFtZT0iQVdT
         QWNjZXNzS2V5SWQiDQoNCkFLSUFJS1hXM1paNVdOVVJOWU1BDQotLS0tLS0t
         LS0tLS0tUnVieU11bHRpcGFydFBvc3QNCkNvbnRlbnQtRGlzcG9zaXRpb246
-        IGZvcm0tZGF0YTsgbmFtZT0ia2V5Ig0KDQp1cGxvYWRzLzhfMjYxDQotLS0t
+        IGZvcm0tZGF0YTsgbmFtZT0ia2V5Ig0KDQp1cGxvYWRzLzhfMjk2DQotLS0t
         LS0tLS0tLS0tUnVieU11bHRpcGFydFBvc3QNCkNvbnRlbnQtRGlzcG9zaXRp
         b246IGZvcm0tZGF0YTsgbmFtZT0iZmlsZSI7IGZpbGVuYW1lPSJ0ZXN0Zmls
         ZS5kb2N4Ig0KQ29udGVudC1MZW5ndGg6IDI2NzU3DQpDb250ZW50LVR5cGU6
@@ -677,25 +677,25 @@ http_interactions:
       message: No Content
     headers:
       X-Amz-Id-2:
-      - C9Er0s0sBN+H3wNuhx3DAybIYTx/7ItaYUQbi5BUk+rFk1lkd/18bTJl8CVjlAB3
+      - trTyyVk9T7rGLnFABnfIWpaHiWMtVsTp9ibGa4FUUUivTjyvJG5MdYMJR0HgFQz6
       X-Amz-Request-Id:
-      - D8C00CE2B72FE34C
+      - B57750BB5AF1FC8C
       Date:
-      - Sun, 07 Jul 2013 19:25:21 GMT
+      - Sun, 07 Jul 2013 22:44:37 GMT
       Etag:
       - ! '"0f2f925b5ac7ef2034c4cd968810579e"'
       Location:
-      - https://fileturn.s3.amazonaws.com/uploads%2F8_261
+      - https://fileturn.s3.amazonaws.com/uploads%2F8_296
       Server:
       - AmazonS3
     body:
       encoding: US-ASCII
       string: ''
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:27:43 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:59 GMT
 - request:
     method: post
-    uri: http://localhost:3000/api/files.json?convert_to=pdf&file&file_type=docx&token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh&upload_id=261&url=https://fileturn.s3.amazonaws.com/uploads/8_261
+    uri: http://localhost:3000/api/files.json?convert_to=pdf&file&file_type=docx&token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh&upload_id=296&url=https://fileturn.s3.amazonaws.com/uploads/8_296
     body:
       encoding: US-ASCII
       string: ''
@@ -716,24 +716,24 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       Etag:
-      - ! '"c5a610f1d4a55a601d4c53f4058c2a03"'
+      - ! '"8d3e274e054c604d14fc578e169fe704"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0f46ccb7d82483b9a0acdb5acc274199
+      - 717e959adffff11ab0baeca6644eeaa1
       X-Runtime:
-      - '0.023771'
+      - '0.024022'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 19:27:43 GMT
+      - Sun, 07 Jul 2013 22:46:59 GMT
       Content-Length:
       - '176'
       Connection:
       - Keep-Alive
     body:
       encoding: US-ASCII
-      string: ! '{"id":557,"url":"https://fileturn.s3.amazonaws.com/uploads/8_261","convert_to":"pdf","created_at":"2013-07-07T19:27:43Z","status":"queued","download_url":"","notifications":[]}'
+      string: ! '{"id":613,"url":"https://fileturn.s3.amazonaws.com/uploads/8_296","convert_to":"pdf","created_at":"2013-07-07T22:46:59Z","status":"queued","download_url":"","notifications":[]}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:27:43 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:59 GMT
 recorded_with: VCR 2.4.0

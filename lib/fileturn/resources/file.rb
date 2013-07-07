@@ -35,6 +35,9 @@ module FileTurn
     private
 
       def upload_file(file, params)
+        evaluate_file_size = FileTurn::Upload.send(:evaluate_file_size, file)
+        return evaluate_file_size unless evaluate_file_size.nil?
+
         signed_params = FileTurn::Upload.send(:signed_upload_url, file)
         return signed_params if signed_params.errors
 

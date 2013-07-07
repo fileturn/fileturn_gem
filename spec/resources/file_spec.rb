@@ -111,6 +111,18 @@ describe FileTurn::File do
         FileTurn::Upload.all.uploads.count.should == 0
       end
     end
+
+    it 'doesnt upload since file is too big' do
+      user_without_credits
+      FileTurn::Account.should_receive(:max_file_size_in_bytes).and_return(0)
+      file = FileTurn::File.convert(:file => File.open('./spec/data/testfile.docx'), :convert_to => :pdf)
+      file.queued?.should == nil
+      file.errors.should == {'file_size'=>['is too big']}
+
+      VCR.use_cassette('file_doesnt_upload_since_too_big') do
+        FileTurn::Upload.all.uploads.count.should == 0
+      end
+    end
   end
 
   it '#success?' do

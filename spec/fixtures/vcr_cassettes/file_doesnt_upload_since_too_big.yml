@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:3000/api/uploads/19.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
+    uri: http://localhost:3000/api/uploads.json?token=vGAMKzyN1pFGCNcCFsPpjjVVZtvim1zop3te2pQU
     body:
       encoding: US-ASCII
       string: ''
@@ -23,24 +23,24 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       Etag:
-      - ! '"dc6610c293f9549d4c844add90a55b08"'
+      - ! '"b43687c602a82010e4d4591ff6b7404f"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5b646966a1b4b352258d3fa574712a79
+      - cafebdf6b2dfabab85adb53c2a1de1d3
       X-Runtime:
-      - '0.010860'
+      - '0.015049'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 22:46:59 GMT
+      - Sun, 07 Jul 2013 23:00:04 GMT
       Content-Length:
-      - '346'
+      - '79'
       Connection:
       - Keep-Alive
     body:
       encoding: US-ASCII
-      string: ! '{"id":19,"policy":"eyJleHBpcmF0aW9uIjoiMjAxMy0wNy0wN1QwNzo0MjoyMVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybiJ9LHsia2V5IjoidXBsb2Fkcy84XzE5In0sWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsNTAwLDUwMF1dfQ==","signature":"fT8UPL6JZyFFDNnvp34hu19xTOA=","aws_access_key_id":"AKIAIKXW3ZZ5WNURNYMA","key":"uploads/8_19","url":"https://fileturn.s3.amazonaws.com"}'
+      string: ! '{"uploads":[],"total_uploads":0,"current_page":1,"per_page":20,"total_pages":0}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 22:46:59 GMT
+  recorded_at: Sun, 07 Jul 2013 23:00:04 GMT
 recorded_with: VCR 2.4.0

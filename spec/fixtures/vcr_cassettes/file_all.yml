@@ -23,17 +23,17 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge
       Etag:
-      - ! '"85e105670133f13360aa2f82da481d2f"'
+      - ! '"a0ad6f6d1d5bed418b32e6ea4d4977c9"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 448adf3cd13b32cc8a60e24e26564fe2
+      - 7624b8fbde85ac2530bbe7c001ce288d
       X-Runtime:
-      - '0.037491'
+      - '0.037598'
       Server:
       - WEBrick/1.3.1 (Ruby/1.9.3/2012-11-10)
       Date:
-      - Sun, 07 Jul 2013 19:26:04 GMT
+      - Sun, 07 Jul 2013 22:46:58 GMT
       Content-Length:
       - '6636'
       Connection:
@@ -54,7 +54,7 @@ http_interactions:
         type not supported: com","parsed_time":null,"status":"failed","time_taken":null,"file_id":276}]},{"id":145,"url":"http://www.iiswc.org/iiswc2013/sample.doc","convert_to":"pdfa","created_at":"2013-07-05T22:41:42Z","status":"failed","download_url":"","notifications":[{"id":123,"details":"extension
         not supported: pdfa","parsed_time":null,"status":"failed","time_taken":null,"file_id":145}]},{"id":146,"url":"http://www.iiswc.org/iiswc2013/sample.doc","convert_to":"pdfa","created_at":"2013-07-05T22:41:44Z","status":"failed","download_url":"","notifications":[{"id":124,"details":"extension
         not supported: pdfa","parsed_time":null,"status":"failed","time_taken":null,"file_id":146}]},{"id":157,"url":"http://www.iiswc.org/iiswc2013/sample.doc","convert_to":"pdf","created_at":"2013-07-06T01:23:56Z","status":"processed","download_url":"https://fileturn.s3.amazonaws.com/8_157.pdf?AWSAccessKeyId=AKIAIKXW3ZZ5WNURNYMA&Expires=1373306351&Signature=BLFdG%2BdNziqVAK6Hkou5Aovc6rw%3D","notifications":[{"id":135,"details":null,"parsed_time":"2013-07-06T01:24:00Z","status":"success","time_taken":"4.32036","file_id":157}]},{"id":142,"url":"http://www.iiswc.org/iiswc2013/sample.doc","convert_to":"pdf","created_at":"2013-07-05T22:40:13Z","status":"processed","download_url":"https://fileturn.s3.amazonaws.com/8_142.pdf?AWSAccessKeyId=AKIAIKXW3ZZ5WNURNYMA&Expires=1373306351&Signature=Jr4ECv5YHa9wpB8cDHGSd%2FYam%2Bw%3D","notifications":[{"id":121,"details":null,"parsed_time":"2013-07-05T22:40:32Z","status":"success","time_taken":"9.192231","file_id":142}]},{"id":160,"url":"http://www.iiswc.org/iiswc2013/sample.doc","convert_to":"pdf","created_at":"2013-07-06T05:49:17Z","status":"processed","download_url":"https://fileturn.s3.amazonaws.com/8_160.pdf?AWSAccessKeyId=AKIAIKXW3ZZ5WNURNYMA&Expires=1373306590&Signature=%2BtR6KbPCdZWzrJ%2F3RWyomG8Pc5k%3D","notifications":[{"id":138,"details":null,"parsed_time":"2013-07-06T05:49:21Z","status":"success","time_taken":"3.653004","file_id":160}]},{"id":151,"url":"http://www.iiswc.org/iiswc2013/sample.doc","convert_to":"pdaa","created_at":"2013-07-05T22:41:57Z","status":"failed","download_url":"","notifications":[{"id":127,"details":"extension
-        not supported: pdaa","parsed_time":null,"status":"failed","time_taken":null,"file_id":151}]}],"total_files":374,"current_page":1,"per_page":20,"total_pages":19}'
+        not supported: pdaa","parsed_time":null,"status":"failed","time_taken":null,"file_id":151}]}],"total_files":380,"current_page":1,"per_page":20,"total_pages":19}'
     http_version: 
-  recorded_at: Sun, 07 Jul 2013 19:26:04 GMT
+  recorded_at: Sun, 07 Jul 2013 22:46:58 GMT
 recorded_with: VCR 2.4.0
