@@ -81,7 +81,6 @@ You can also request notification to be sent to you whenver the status of a file
 
 We will hit this notification url with the new status of the file and the file_id. 
 
-**Note: We will try queing your file twice in case of a a failure (ex/ we couldnt reach the url). You will recieve two notifications in that case. The first could be failed and second success.**
 
 ## Other File Options
 
