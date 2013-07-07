@@ -66,6 +66,13 @@ When your file is done, the file object will store a download link
 	
 	if file.success?
 		download_url = file.download_url
+		time_taken_for_conversion = file.time_taken
+	end
+
+In the case you get a failure, you can retrieve the details using
+
+	if(file.reload.failed?)
+		file.notifications.last.details
 	end
 
 #### Notifications
@@ -75,6 +82,17 @@ You can also request notification to be sent to you whenver the status of a file
 We will hit this notification url with the new status of the file and the file_id. 
 
 **Note: We will try queing your file twice in case of a a failure (ex/ we couldnt reach the url). You will recieve two notifications in that case. The first could be failed and second success.**
+
+## Other File Options
+
+You can fetch information of a single file using the file_id.
+
+	FileTurn::File.find(file_id)
+
+Or all the files
+	
+	FileTurn::File.all
+
 
 ## Account Details
 
