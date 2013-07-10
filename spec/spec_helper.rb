@@ -5,6 +5,7 @@ require 'fileturn'
 require 'rspec'
 require 'ostruct'
 require 'vcr'
+require 'stub_http_client'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'

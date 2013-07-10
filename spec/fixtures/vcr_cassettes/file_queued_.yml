@@ -130,4 +130,47 @@ http_interactions:
       string: ! '{"id":210,"url":"http://www.k12.wa.us/rti/implementation/pubdocs/SchoolBlueprint.doc","convert_to":"pdf","created_at":"2013-07-07T02:30:27Z","status":"queued","download_url":"","notifications":[]}'
     http_version: 
   recorded_at: Sun, 07 Jul 2013 22:46:58 GMT
+- request:
+    method: get
+    uri: http://fileturn.net/api/files/212.json?token=67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 10 Jul 2013 02:23:46 GMT
+      Status:
+      - 401 Unauthorized
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - b1166a18aed3943dd0743a82c56637ca
+      X-Runtime:
+      - '0.010285'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":"Your token is invalid","status":401}'
+    http_version: 
+  recorded_at: Wed, 10 Jul 2013 02:26:16 GMT
 recorded_with: VCR 2.4.0
