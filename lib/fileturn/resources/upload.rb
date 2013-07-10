@@ -30,7 +30,7 @@ module FileTurn
         file_type = 'unknown' if file_type == ''
         file_size = file.class.size(file.path)
 
-        conn.post('files/upload.json', { content_type: file_type, content_length: file_size }, 201) do |params|
+        conn.post('files/upload.json', { :content_type => file_type, :content_length => file_size }, 201) do |params|
           params['file_type'] = file_type
           params['file_size'] = file_size
           OpenStruct.new(params)
@@ -39,7 +39,7 @@ module FileTurn
 
       def evaluate_file_size(file)
         max_size = Account.load_only_if_not_loaded.max_file_size_in_bytes
-        if file.size > max_size
+        if file.class.size(file) > max_size
           OpenStruct.new(:errors => {"file_size"=>["is too big"]})
         end
       end
