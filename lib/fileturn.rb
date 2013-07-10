@@ -9,6 +9,7 @@ module FileTurn
   end
 end
 
+require 'date'
 require "fileturn/exceptions"
 require "fileturn/http_client"
 require "fileturn/resources/resource"
