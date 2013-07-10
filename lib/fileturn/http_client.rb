@@ -6,7 +6,7 @@ module FileTurn
   class HttpClient
 
     def self.conn
-      @conn ||= Faraday.new(:url => 'http://localhost:3000/')
+      @conn ||= Faraday.new(:url => 'http://fileturn.net/')
     end
 
     def self.get(url, params, status_codes, &block)
