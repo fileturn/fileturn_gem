@@ -77,7 +77,7 @@ In the case you get a failure, you can retrieve the details using
 
 #### Notifications
 
-You can also request notification to be sent to you whenver the status of a file changes. Go into your [Dashboard](http://fileturn.net/dashboard/notifications) and specify a notification url. 
+You can also request notification to be sent to you whenever the status of a file changes. Go into your [Dashboard](http://fileturn.net/dashboard/notifications) and specify a notification url. 
 
 We will hit this notification url with the new status of the file and the file_id. 
 
@@ -95,7 +95,7 @@ Or all the files
 
 ## Account Details
 
-You can also fetch account details like how much credit you have. 
+You can fetch account details like credits count. 
 
 	FileTurn::Account.load # fetch data from server
 	FileTurn::Account.credits
