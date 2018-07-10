@@ -71,7 +71,7 @@ In the case you get a failure, you can retrieve the details using
 
 You can also request notification to be sent to you whenever the status of a conversion changes via webhooks. Go into your [Dashboard](https://fileturn.net/dashboard/notifications) and specify a webhook url. 
 
-## Other Conversion Options
+## Fetching Conversion(s)
 
 You can fetch information of a single conversion using an id.
 
