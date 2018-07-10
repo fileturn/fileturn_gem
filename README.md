@@ -2,6 +2,10 @@
 
 Ruby Gem Support for [FileTurn](https://fileturn.net/) Api. FileTurn converts your files to different formats. 
 
+# Api Docs
+
+Check out our [api docs](https://fileturn.net/documentation) for more information.
+
 ## Installation
 
 Add this line to your application's Gemfile:
