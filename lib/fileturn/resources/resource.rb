@@ -8,10 +8,5 @@ module FileTurn
       end
     end
 
-    # instance
-    def errors
-      false
-    end
-
   end
 end

@@ -1,14 +1,16 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: http://localhost:5000/api/users.json?api_token=51d5fc191b2b95f9278becf6b51fa347
+    method: post
+    uri: http://localhost:5000/api/conversions.json?api_token=51d5fc191b2b95f9278becf6b51fa347&type=WordToPdf&url=http://iiswc.org/iiswc2013/sample.doc
     body:
-      encoding: US-ASCII
+      encoding: UTF-8
       string: ''
     headers:
       User-Agent:
       - Faraday v0.15.2
+      Content-Length:
+      - '0'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -33,19 +35,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0d66b13e67af61ea36799ae5e7c780f1"
+      - W/"51b9aebfdb480412963ff39d91b89074"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8d6cd7e4-5ab9-414e-a35b-bc52a27ad8f2
+      - b8b1b69f-da08-4123-b1f0-5f68c361f881
       X-Runtime:
-      - '0.031059'
+      - '0.040131'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"id":"3d96a094-dde5-4319-b5fb-bb87aabc7b0e","email":"test@test.com","plan":{"name":"free","max_file_size_in_mb":3,"conversions_per_month":50,"max_requests_per_second":1},"time_zone":"Eastern
-        Time (US \u0026 Canada)","subscription":{"billing_cycle_started":"2018-07-09T21:21:55.000+00:00","billing_cycle_ends":"2018-08-09T21:21:55.000+00:00","stats":{"conversions_left":0,"successful_conversions":50,"failed_conversions":0,"processing_conversions":0}}}'
+      string: '{"id":"2d9940c1-4651-44ed-869c-9e4d2ab1e3cf","type":"WordToPdf","status":"created","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"temporary_download_urls":[],"processing_time_in_seconds":null,"error_type":null,"error_details":null,"notification_responses":[]}'
     http_version: 
-  recorded_at: Tue, 10 Jul 2018 00:48:08 GMT
+  recorded_at: Tue, 10 Jul 2018 01:44:53 GMT
 recorded_with: VCR 4.0.0

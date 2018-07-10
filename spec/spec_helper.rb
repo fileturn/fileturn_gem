@@ -15,6 +15,6 @@ end
 
 RSpec.configure do |config|
   config.before(:each) do
-    FileTurn.configure(:api_key => "67sFfjudMpXxJeioQcPSppYkoVdQD1oetqPWzMAh")
+    FileTurn.configure(:api_token => "51d5fc191b2b95f9278becf6b51fa347")
   end
 end

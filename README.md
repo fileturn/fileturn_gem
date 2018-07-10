@@ -1,6 +1,6 @@
 # Fileturn
 
-Ruby Gem Support for [FileTurn](http://fileturn.net/) Api. FileTurn converts your files to different formats. 
+Ruby Gem Support for [FileTurn](https://fileturn.net/) Api. FileTurn converts your files to different formats. 
 
 ## Installation
 
@@ -18,9 +18,9 @@ Or install it yourself as:
 
 ## Configuration
 
-Retrieve your API Key from [Dashboard](http://fileturn.net/dashboard/api_token).
+Retrieve your API Token from [Dashboard](https://fileturn.net/dashboard/api_token).
 
-	FileTurn.configure(:api_key => "[YOUR KEY]")
+	FileTurn.configure(:api_token => "[YOUR KEY]")
 	
 Thats it - now you are ready to use FileTurn.
 
@@ -30,78 +30,72 @@ Thats it - now you are ready to use FileTurn.
 
 There are multiple ways to convert a file. If your file is public, we can fetch the file and you just need to specify the url. 
 
-	file = FileTurn::File.convert(
+	conversion = FileTurn::Conversion.process!(
 		:url => "http://crypto.stanford.edu/DRM2002/darknet5.doc",
-		:convert_to => :pdf
+		:type => "WordToPdf"
 	)
-	
-	unless file.errors
-		# Woot done!
-	end
 
 If your file is stored locally, you can use
 
-	file = FileTurn::File.convert(
+	file = FileTurn::Conversion.process!(
 		:file => File.open("localfile.doc"),
-		:convert_to => :txt
+		:type => "WordToPdf"
 	)
 
 Thats all you have to do to convert files. Upon calling that, your file will be queued for converting. 
 
-### How will i know when my file is done?
+### How will i know when my conversion is done?
 
-#### File Object
+#### Conversion Object
 
 There are few ways to check if your file is done. You can repeatedly call one of these:
 
-	file.reload.queued? 
-	file.reload.success?
-	file.reload.failed?
+	conversion.reload!.completed? 
+	conversion.reload!.failed?
+	conversion.reload!.processing?
+	conversion.reload!.created?
 
-When your file is done, the file object will store a download link
+When your conversion is done, the conversion object will have temporary download urls.
 
-	while(file.reload.queued?)
-		sleep(5000)
-	end
-	
-	if file.success?
-		download_url = file.download_url
-		time_taken_for_conversion = file.time_taken
+	if conversion.success?
+		download_url = conversion.temporary_download_urls
+		time_taken_for_conversion = conversion.processing_time_in_seconds
 	end
 
 In the case you get a failure, you can retrieve the details using
 
-	if(file.reload.failed?)
-		file.notifications.last.details
-	end
+	conversion.error_type
+	conversion.error_details
 
 #### Notifications
 
-You can also request notification to be sent to you whenever the status of a file changes. Go into your [Dashboard](http://fileturn.net/dashboard/notifications) and specify a notification url. 
+You can also request notification to be sent to you whenever the status of a conversion changes via webhooks. Go into your [Dashboard](https://fileturn.net/dashboard/notifications) and specify a webhook url. 
 
-We will hit this notification url with the new status of the file and the file_id. 
+## Other Conversion Options
 
+You can fetch information of a single conversion using an id.
 
-## Other File Options
+	FileTurn::Conversion.find(id)
 
-You can fetch information of a single file using the file_id.
-
-	FileTurn::File.find(file_id)
-
-Or all the files
+Or all the conversions
 	
-	FileTurn::File.all
-
+	FileTurn::Conversion.all
 
 ## Account Details
 
-You can fetch account details like credits count. 
+You can fetch account details 
 
-	FileTurn::Account.load # fetch data from server
-	FileTurn::Account.credits
+	account = FileTurn::Account.load # fetch data from server
 
-Or you can use
+	# plan details
+	account.plan.name
+	account.plan.max_file_size_in_mb
+	account.plan.conversions_per_month
+	account.plan.max_requests_per_second
 
-	FileTurn::Account.load.credits
+	# stats for account (for current billing cycle)
+	account.subscription.stats.conversions_left
+	account.subscription.stats.successful_conversions
+	account.subscription.stats.failed_conversions
+	account.subscription.stats.processing_conversions
 
-Thanks!

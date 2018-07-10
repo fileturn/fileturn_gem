@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/conversions.json?api_token=51d5fc191b2b95f9278becf6b51fa347&page=2&per=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"36f316727b9e989eb8715c513825e708"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 76acd0d5-9222-4e75-b87f-e2eb08c2cf2f
+      X-Runtime:
+      - '0.010065'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"total_conversions":57,"current_page":2,"per_page":5,"total_pages":12,"conversions":[{"id":"f4fbfab0-9086-443d-98b4-7d39794153ff","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"aa8e1b40-0587-40c1-8a1b-d0c08487865c","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"cd7f369b-40eb-433f-9b86-09493624969c","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"c3f838d5-f8e7-4f86-a7eb-7890b0213d0c","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"ff07a237-269b-4d4c-a6d2-bdd0e87fee83","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8}]}'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 01:33:26 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/conversions/f4fbfab0-9086-443d-98b4-7d39794153ff.json?api_token=51d5fc191b2b95f9278becf6b51fa347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"420a625465c48f84884cf90e96bcba02"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dccda91e-f758-4610-b214-16de51fdd3ef
+      X-Runtime:
+      - '0.127611'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"f4fbfab0-9086-443d-98b4-7d39794153ff","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"temporary_download_urls":["http://fileturn-dev.s3.amazonaws.com/ab861a88-b50a-454c-b0ec-9ab614df0f1c/sample.pdf?AWSAccessKeyId=AKIAIG4W7R33BAWKUJMQ\u0026Expires=1531192876\u0026Signature=6dggTd4MfCbHdhptWcVumPPmATY%3D"],"processing_time_in_seconds":9,"error_type":null,"error_details":null,"notification_responses":[]}'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 02:21:16 GMT
+recorded_with: VCR 4.0.0

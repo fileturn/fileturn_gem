@@ -6,7 +6,7 @@ module FileTurn
   class HttpClient
 
     def self.conn
-      @conn ||= Faraday.new(:url => 'http://fileturn.net/')
+      @conn ||= Faraday.new(:url => 'https://fileturn.net/')
     end
 
     def self.get(url, params, status_codes, &block)
@@ -29,20 +29,22 @@ module FileTurn
     end
 
     def self.setup_params(params)
-      params['token'] = FileTurn.api_key
+      params['api_token'] = FileTurn.api_token
       params
     end
 
     def self.handle_error(resp)
       case resp.status
-      when 401
-        raise FileTurn::UnauthorizedException.new(resp)
-      when 500
-        raise FileTurn::InternalServerException.new(resp)
-      when 422
-        OpenStruct.new(JSON.parse(resp.body))
-      else
+      when 200..399
         nil
+      when 400
+        raise FileTurn::BadRequestError.new(JSON.parse(resp.body))
+      when 401
+        raise FileTurn::UnauthorizedError.new(resp)
+      when 404
+        raise FileTurn::NotFoundError.new(resp)
+      else
+        raise FileTurn::UnknownError.new(resp)
       end
     end
   end

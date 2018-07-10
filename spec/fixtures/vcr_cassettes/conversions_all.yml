@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/conversions.json?api_token=51d5fc191b2b95f9278becf6b51fa347&page=1&per=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"77e10965070a89cf2aa4a3804374d962"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ea2998b8-36c1-4e09-bc73-4bbcee84a234
+      X-Runtime:
+      - '0.012913'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"total_conversions":57,"current_page":1,"per_page":20,"total_pages":3,"conversions":[{"id":"2994f782-189f-4da2-adad-6fea90673a04","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"6d0597e4-aa7b-40f2-9234-b3c90a6ba3e3","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"c32430dd-f2f8-4e3a-b49e-a994dec09285","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"6baea88c-fed3-4ccf-9a55-37586a8c9a0f","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":10},{"id":"6bd77fa8-f251-4e93-8c1b-26b1b1c7bcc7","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"f4fbfab0-9086-443d-98b4-7d39794153ff","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"aa8e1b40-0587-40c1-8a1b-d0c08487865c","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"cd7f369b-40eb-433f-9b86-09493624969c","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"c3f838d5-f8e7-4f86-a7eb-7890b0213d0c","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"ff07a237-269b-4d4c-a6d2-bdd0e87fee83","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8},{"id":"93850d08-be13-48bd-8cf4-3722b30d928b","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8},{"id":"891dd7a8-5a9b-4a6b-81b3-2ce6a2704e09","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"a7f5c510-e075-4506-a439-7b4158bb3456","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":11},{"id":"c420c03b-1364-4cf1-83bc-f867baefdd7d","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"74568fc0-605d-4ab4-a189-c88dd06806a5","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8},{"id":"1eaa23c4-cf3f-4e1f-ae04-55375b2bede2","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9},{"id":"6bf6297f-e996-412e-9f47-6915e9073c85","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8},{"id":"392ad903-c1d0-45d9-8618-3bae7dcd714e","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8},{"id":"44281b62-baf9-4b56-aa9b-1451a01be830","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":8},{"id":"6d90001a-0c3b-423f-be7c-3de1bd4e3e38","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"processing_time_in_seconds":9}]}'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 01:28:11 GMT
+recorded_with: VCR 4.0.0

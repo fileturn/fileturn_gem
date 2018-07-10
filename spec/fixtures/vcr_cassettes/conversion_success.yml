@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/conversions/b120b954-82b2-41c6-bef2-c83b3462463b.json?api_token=51d5fc191b2b95f9278becf6b51fa347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"95378c9887e5d43c2fe0d1015cf42723"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1ca9c1af-9981-4ed9-8a4f-327287833b36
+      X-Runtime:
+      - '0.092875'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"b120b954-82b2-41c6-bef2-c83b3462463b","type":"WordToPdf","status":"completed","source_files":["http://iiswc.org/iiswc2013/sample.doc"],"temporary_download_urls":["http://fileturn-dev.s3.amazonaws.com/50ad3713-dd05-4dae-adc4-77577cfc49f1/sample.pdf?AWSAccessKeyId=AKIAIG4W7R33BAWKUJMQ\u0026Expires=1531189092\u0026Signature=YVIcYzXAVO2tzR30C%2BF%2F%2Bq6L2SY%3D"],"processing_time_in_seconds":9,"error_type":null,"error_details":null,"notification_responses":[{"id":"6a76af7e-a6e1-44ec-96ed-7936347066f6","status":"success","type":"webhook","status_code":200,"url":"https://webhook.site/dd5181b8-571f-46ba-914e-21dcedbe9c3b"}]}'
+    http_version: 
+  recorded_at: Tue, 10 Jul 2018 01:18:12 GMT
+recorded_with: VCR 4.0.0
