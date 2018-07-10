@@ -57,7 +57,7 @@ There are few ways to check if your file is done. You can repeatedly call one of
 
 When your conversion is done, the conversion object will have temporary download urls.
 
-	if conversion.success?
+	if conversion.completed?
 		download_url = conversion.temporary_download_urls
 		time_taken_for_conversion = conversion.processing_time_in_seconds
 	end
