@@ -4,7 +4,7 @@ Ruby Gem Support for [FileTurn](https://fileturn.net/) Api. FileTurn converts yo
 
 # Api Docs
 
-Check out our [api docs](https://fileturn.net/documentation) for more information.
+Check out our [api docs](https://fileturn.net/documentations) for more information.
 
 ## Installation
 
