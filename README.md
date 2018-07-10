@@ -42,7 +42,18 @@ If your file is stored locally, you can use
 		:type => "WordToPdf"
 	)
 
-Thats all you have to do to convert files. Upon calling that, your file will be queued for converting. 
+Thats all you have to do to convert files. Upon calling that, your file will be queued for converting. If there is an error queuing your file, an exception with base class of `FileTurn::FileTurnError` will be thrown. 
+
+Working with errors:
+
+	begin
+		file = FileTurn::Conversion.process!(
+			:file => File.open("localfile.doc"),
+			:type => "WordToPdf"
+		)
+	rescue FileTurn::FileTurnError => ex
+		# conversion queueing failed 
+	end
 
 ### How will i know when my conversion is done?
 
