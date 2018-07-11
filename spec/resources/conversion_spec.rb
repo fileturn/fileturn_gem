@@ -98,6 +98,20 @@ describe FileTurn::Conversion do
         end
       end
     end
+
+    it 'allows uploading file' do
+      VCR.use_cassette('conversion_with_file_created') do
+        conv = FileTurn::Conversion.process!(file: File.open('./spec/data/testfile.docx'), type: "WordToPdf")
+        expect(conv.created?).to be(true)
+        expect(conv.source_files.first).to include('amazonaws.com')
+
+        VCR.use_cassette('conversion_with_file_success') do
+          conv = FileTurn::Conversion.find(conv.id)
+          expect(conv.created?).to be(false)
+          expect(conv.completed?).to be(true)
+        end
+      end
+    end
   end
 
   describe 'reload!' do

@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/uploads/dec67910-6d22-411a-8c3d-4ae1db69469d.json?api_token=51d5fc191b2b95f9278becf6b51fa347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1a5941e531dedd0b2a5cc61be9aeb005"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6175b7de-b929-4997-a3dc-d22c497ec6d0
+      X-Runtime:
+      - '0.094627'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"dec67910-6d22-411a-8c3d-4ae1db69469d","fields":{"acl":"private","key":"uploads/51f49f8a-0f3a-4728-a6c5-2cd09ea4a47c/test.png","policy":"eyJleHBpcmF0aW9uIjoiMjAxOC0wNy0xMVQxNzozNDoxMFoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybi1kZXYifSx7ImtleSI6InVwbG9hZHMvNTFmNDlmOGEtMGYzYS00NzI4LWE2YzUtMmNkMDllYTRhNDdjL3Rlc3QucG5nIn0seyJhY2wiOiJwcml2YXRlIn0seyJ4LWFtei1jcmVkZW50aWFsIjoiQUtJQUlHNFc3UjMzQkFXS1VKTVEvMjAxODA3MTEvdXMtZWFzdC0xL3MzL2F3czRfcmVxdWVzdCJ9LHsieC1hbXotYWxnb3JpdGhtIjoiQVdTNC1ITUFDLVNIQTI1NiJ9LHsieC1hbXotZGF0ZSI6IjIwMTgwNzExVDE2MzQxMFoifV19","x-amz-date":"20180711T163410Z","x-amz-algorithm":"AWS4-HMAC-SHA256","x-amz-signature":"80860499d7e74d33b34ea4080559e1969e5101412706322c36f8ce205cafa2ae","x-amz-credential":"AKIAIG4W7R33BAWKUJMQ/20180711/us-east-1/s3/aws4_request"},"url":"https://fileturn-dev.s3.amazonaws.com","download_url":[]}'
+    http_version: 
+  recorded_at: Wed, 11 Jul 2018 16:44:08 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/uploads/dec67910-6d22-411a-8c3d-4ae1db69469d.json?api_token=51d5fc191b2b95f9278becf6b51fa347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1a5941e531dedd0b2a5cc61be9aeb005"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fda2a066-c47b-4f4c-8859-632f1e18ce81
+      X-Runtime:
+      - '0.150029'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"dec67910-6d22-411a-8c3d-4ae1db69469d","fields":{"acl":"private","key":"uploads/51f49f8a-0f3a-4728-a6c5-2cd09ea4a47c/test.png","policy":"eyJleHBpcmF0aW9uIjoiMjAxOC0wNy0xMVQxNzozNDoxMFoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJmaWxldHVybi1kZXYifSx7ImtleSI6InVwbG9hZHMvNTFmNDlmOGEtMGYzYS00NzI4LWE2YzUtMmNkMDllYTRhNDdjL3Rlc3QucG5nIn0seyJhY2wiOiJwcml2YXRlIn0seyJ4LWFtei1jcmVkZW50aWFsIjoiQUtJQUlHNFc3UjMzQkFXS1VKTVEvMjAxODA3MTEvdXMtZWFzdC0xL3MzL2F3czRfcmVxdWVzdCJ9LHsieC1hbXotYWxnb3JpdGhtIjoiQVdTNC1ITUFDLVNIQTI1NiJ9LHsieC1hbXotZGF0ZSI6IjIwMTgwNzExVDE2MzQxMFoifV19","x-amz-date":"20180711T163410Z","x-amz-algorithm":"AWS4-HMAC-SHA256","x-amz-signature":"80860499d7e74d33b34ea4080559e1969e5101412706322c36f8ce205cafa2ae","x-amz-credential":"AKIAIG4W7R33BAWKUJMQ/20180711/us-east-1/s3/aws4_request"},"url":"https://fileturn-dev.s3.amazonaws.com","download_url":[]}'
+    http_version: 
+  recorded_at: Wed, 11 Jul 2018 16:44:59 GMT
+recorded_with: VCR 4.0.0

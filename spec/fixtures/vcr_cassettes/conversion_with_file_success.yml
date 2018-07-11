@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/conversions/55b6d156-9e68-416a-943e-a6c28bce64c2.json?api_token=51d5fc191b2b95f9278becf6b51fa347
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"479e20c08af15286abde43481c9ba460"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fe6a7dd8-17fe-4c08-a57a-d0718e8a6868
+      X-Runtime:
+      - '0.337106'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"55b6d156-9e68-416a-943e-a6c28bce64c2","type":"WordToPdf","status":"completed","source_files":["https://fileturn-dev.s3.amazonaws.com/uploads/d3c36b9c-2e83-4436-afd0-8700c65ce6ae/testfile.docx?AWSAccessKeyId=AKIAIG4W7R33BAWKUJMQ\u0026Expires=1531333258\u0026Signature=V9TQEE4SoPaux834YzQjXXSsOAA%3D"],"temporary_download_urls":["https://fileturn-dev.s3.amazonaws.com/f5d41706-68f8-4699-b49f-ec8c5f7e0a16/testfile.pdf?AWSAccessKeyId=AKIAIG4W7R33BAWKUJMQ\u0026Expires=1531333289\u0026Signature=qU8wSTFH%2F8Pj7b1TRG1UGo0kYrk%3D"],"processing_time_in_seconds":6,"error_type":null,"error_details":null,"notification_responses":[{"id":"0bb86828-afda-4a3e-bd8a-9c8420cf8688","status":"success","type":"webhook","status_code":200,"url":"https://webhook.site/fe617ff1-54e3-4ad0-bc3b-9fc3b77eab3d"}],"cost":1}'
+    http_version: 
+  recorded_at: Wed, 11 Jul 2018 17:21:29 GMT
+recorded_with: VCR 4.0.0

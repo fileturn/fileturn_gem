@@ -1,5 +1,6 @@
 module FileTurn
   class Account < Resource
+    attr_accessor :params
 
     def initialize(params)
       @params = RecursiveOpenStruct.new(params, recurse_over_arrays: true)
@@ -7,7 +8,6 @@ module FileTurn
 
     def method_missing(m, *args, &block)
       @params.send(m)
-      self
     end
    
     class << self
