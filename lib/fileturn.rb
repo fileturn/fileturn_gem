@@ -4,8 +4,8 @@ module FileTurn
   attr_reader :api_token
 
   def configure(params={})
-    raise ArgumentError, "missing params (api_token)" if params[:api_token].nil?
-    @api_token = params[:api_token]
+    @api_token = params[:api_token] || ENV['FILETURN_TOKEN']
+    raise ArgumentError, "missing params (api_token)" if @api_token.nil?
   end
 end
 
